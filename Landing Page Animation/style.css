@@ -1,0 +1,211 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+html{
+   background: linear-gradient(to right,#33383b,#23282b);
+   z-index: -5;
+}
+
+.slider{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background: linear-gradient(to left,#bc3f8d ,#407fc2);
+   z-index: -1;
+}
+
+h3#logo{
+   min-height: 10vh;
+}
+
+#logo{
+   padding-top: 20px;
+   font-size: 30px;
+}
+
+.line1{
+   width: 30px;
+   height: 3px;
+   background-color: black;
+   margin-bottom: 5px;
+}
+
+.line2{
+   width: 20px;
+   height: 3px;
+   background-color: black;
+   margin-bottom: 5px;
+   margin-left: 10px;
+}
+
+.line3{
+   width: 30px;
+   height: 3px;
+   background-color: black;
+}
+
+h3{
+   margin-left: 20px;
+}
+
+#hamburger{
+   position: absolute;
+   top: 20px;
+   right: 5%;
+   cursor: pointer;
+}
+
+.hero img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+section{
+   display: flex;
+   height: 80vh;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero{
+   height: 90%;
+   width: 100%;
+   position: relative;
+}
+
+.hero::after{
+   content: "";
+   background-color: black;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   position: absolute;
+   opacity: .1;
+}
+
+.headline{
+   position: absolute;
+   top: 75%;
+   left: 3%;
+   font-size: 50px;
+   color: white;
+   z-index: 3;
+}
+
+.auth{
+   font-family: 'Roboto', sans-serif;
+   font-size: 20px;
+   margin-left: 20px;
+}
+
+div.social{
+   width: 250px;
+   height: max-content;
+   position: absolute;
+   top: 89%;
+   right: 1%;
+   border: none;
+   border-radius: 3px;
+}
+
+div p{
+   margin-left: 86px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   margin-top: 4px;
+   
+}
+
+div .fa.fa-instagram{
+   font-size: 30px;
+   color: rgba(255, 255, 255, 0.959);
+   margin-left: 87px;
+   margin-top: 3px;
+   padding-right: 30px;
+   padding-bottom: 6px;
+}
+
+div .fa.fa-github{
+   font-size:30px;
+   color: rgba(255, 255, 255, 0.959);
+}
+
+@media screen and (max-width:1024px){
+   div.social{
+      width: 200px;
+      top: 88%;
+   }
+   div p{
+      margin-left: 60px ;
+   }
+   div .fa.fa-instagram{
+      margin-left: 60px;
+   }
+}
+
+@media screen and (max-width:768px){
+   h1.headline{
+      font-size: 35px;
+      top: 81%;
+   }
+   .auth{
+      font-size: 18px;
+   }
+}
+
+@media screen and (max-width:425px){
+   h1.headline{
+      font-size: 30px;
+      top: 85%;
+   }
+   div.social{
+      width: 180px;
+      position: absolute;
+      top: 92.5%;
+      left: 30%;
+   }
+   .auth{
+      margin-left: 15px;
+      font-size: 16px;
+      position: absolute;
+      top: 87%;
+   }
+
+   div p{
+      font-size: 14px;
+      margin-left: 56px;
+      margin-top: 1px;
+   }
+
+   div .fa.fa-instagram{
+      font-size: 18px;
+      padding-bottom: 3px;
+   }
+
+   div .fa.fa-github{
+      font-size: 18px;
+   }
+}
+
+@media screen and (max-width:375px){
+   .auth{
+      font-size: 16px;
+      margin-left: 20px;
+   }
+   div.social{
+      left: 25%;
+   }
+}
+
+@media screen and (max-width:320px){
+   div.social{
+      left: 22%;
+   }
+}
